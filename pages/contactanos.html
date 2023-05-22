@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="contenedor_logo">
+            <a href="../index.html"><img class="img_logo" src="../imagenes/icono.png" alt=""></a>
+        </div>
+
+        <nav>
+            <ul class="barra_de_navegacion">
+                <li><a href="./lo_que_nos_destaca.html">Lo que nos destaca</a></li>
+                <li><a href="./nuestas_especialidades.html">Nuestras especialidades</a></li>
+                <li><a href="./nuestras_instalaciones.html">Nuestras instalaciones</a></li>
+                <li><a href="./contactanos.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>CONTACTANOS</h1>
+
+<div class="contenedor_contacto">
+    
+    <section class="direccion">
+        <p>Nuestra Clinica se situa en Godoy Cruz 41, B1609 Boulogne, Provincia de Buenos Aires</p>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.270421981577!2d-58.5511715847731!3d-34.496027980487575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb152a62dc3b1%3A0x1e9915bc02f37399!2sOdontolog%C3%ADa%20Dreyer!5e0!3m2!1ses!2sar!4v1682192413721!5m2!1ses!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="seccion_formulario">
+        <article>
+            Contacta con nosotros:
+            (+54)9 11 3625-132
+        </article>
+        <article>
+            Si deseas información adicional o tienes alguna duda, por favor, rellena el formulario con tus datos y
+            te
+            responderemos tan pronto como nos sea posible.
+        </article>
+        <article class="formulario">
+            <form action="">
+                <fieldset class="formulario">
+                    <legend>Contactate con nosotros</legend>
+                    <!--DATOS DEL USUARIO-->
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id=nombre required>
+                    </div>
+
+                    <div>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <!--SEXO-->
+                    <div>
+                        <label for="masculino">masculino</label>
+                        <input type="radio" name="sexo" id="masculino" value="masculino">
+
+                        <label for="femenino">femenino</label>
+                        <input type="radio" name="sexo" id="femenino" value="femenino">
+
+                        <label for="otro">otro</label>
+                        <input type="radio" name="sexo" id="otro" value="otro">
+                    </div>
+
+                    <!--MOTIVO DE CONSULTA-->
+                    <div>
+                        <label for="motivo_de_consulta">Motivo de consulta</label> <br>
+                        <textarea name="motivo_de_consulta" id="motivo_de_consulta" cols="30" rows="10"></textarea required>
+                    </div>
+
+                </fieldset>
+
+                <div>
+                    <input type="reset" value="resetear formulario">
+                    <input type="submit" value="enviar">
+                </div>
+
+            </form>
+        </article>
+    </section>
+
+
+</div>
+        
+    </main>
+
+    <footer>
+        <p>todos los derechos reservados</p>
+        <a href="https://balsamiq.cloud/sb755jg/pn154ql"> Ir a los wireframe</a>
+    </footer>
+</body>
+
+</html>
