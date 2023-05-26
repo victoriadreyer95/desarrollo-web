@@ -79,6 +79,7 @@
             border-radius: 50%;
             color: aliceblue;
         }
+        
 
         /*medida queries barra de navegacion--desktop-- */
 
@@ -107,9 +108,7 @@
 
             }
 
-            ul.barra_de_navegacion li a :hover {
-                background-color: rgb(52, 25, 150);
-            }
+            
 
         }
 
@@ -170,7 +169,7 @@
         /*formato dentro del div*/
         .contenedor_destaca {
             width: 90 vh;
-            height: 30rem;
+            height: auto;
             margin: 7px;
             border-radius: 10%;
             background-color: rgb(175 181 199);
@@ -211,11 +210,12 @@
 
             .lo_que_nos_destaca {
                 flex-flow: row nowrap;
+                justify-content: space-between;
             }
 
             .contenedor_destaca {
                 height: 60rem;
-                width: 32%;
+                width: 28%;
                 display: flex;
                 flex-direction: column;
                 justify-content: baseline;
@@ -243,7 +243,41 @@
 
         /*NUESTRAS INSTALACIONES*/
 
-  
+        .container__cards {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .subtitulo_instalaciones {
+            text-align: center;
+            padding: 7px;
+            color: #454b6b;
+        }
+
+        .texto__instalaciones {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* medida querie nuestras instalaciones*/
+
+        @media screen and (min-width: 1200px) {
+            .container__cards {
+                flex-flow: row nowrap;
+            }
+
+            .element.style {
+                width: 18rem;
+                height: 40rem;
+            }
+
+            .texto__instalaciones {
+                font-size: 22px;
+            }
+        }
+
 
 
 
@@ -264,12 +298,25 @@
             text-align: center;
         }
 
+        .texto_contactanos {
+            padding: 2rem;
+            color: #454b6b;
+        }
+
+        
+
         /*medida querie contacto*/
 
         @media screen and (min-width: 1200px) {
             .contenedor_contacto {
                 display: flex;
                 flex-direction: row;
+            }
+
+            .texto_contactanos {
+                font-size: 20px;
+                padding: 2rem;
+                color: #454b6b;
             }
 
         }
@@ -285,11 +332,12 @@
         .contenedor_especialidades p {
             text-align: center;
             color: rgb(8, 8, 31);
+            font-size: 1rem;
         }
 
         .contenedor_especialidades {
             width: 90 vh;
-            height: 40rem;
+            height: auto;
             margin: 7px;
             border-radius: 10%;
             background-color: rgb(175 181 199);
@@ -310,11 +358,12 @@
 
             .nuestras_especialidades {
                 flex-flow: row nowrap;
+                justify-content: space-between;
             }
 
             .contenedor_especialidades {
                 height: 60rem;
-                width: 32%;
+                width: 27%;
                 display: flex;
                 flex-direction: column;
                 justify-content: start
