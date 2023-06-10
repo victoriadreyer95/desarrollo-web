@@ -1,0 +1,17 @@
+h1 {
+    color:map-get($paleta_de_colores, color-titulo);
+    font-weight: bolder;
+    font-size: 200%;
+    text-align: center;
+    padding: 1rem;
+}
+
+/*medida queries titulos*/
+
+@media screen and (min-width: 1200px) {
+
+    h1 {
+        font-size: 3rem;
+        padding: 1rem;
+    }
+}

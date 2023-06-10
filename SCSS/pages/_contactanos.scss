@@ -1,0 +1,36 @@
+.direccion {
+    padding: 10px;
+}
+
+.seccion_formulario {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario {
+    width: fit-content;
+    text-align: center;
+}
+
+.texto_contactanos {
+    padding: 2rem;
+    color: map-get($paleta_de_colores , color-subtitulo);
+}
+
+
+
+/*medida querie contacto*/
+
+@media screen and (min-width: 1200px) {
+    .contenedor_contacto {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .texto_contactanos {
+        font-size: 20px;
+        padding: 2rem;
+    }
+}

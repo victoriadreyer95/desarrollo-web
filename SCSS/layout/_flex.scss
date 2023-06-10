@@ -1,0 +1,21 @@
+@mixin contenedor_flex_card_movible {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: map-get($paleta_de_colores , bgc-card);
+    width: 90 vh;
+    height: auto;
+    margin: 7px;
+    border-radius: 10%;
+}
+
+@mixin contenedor_flex_padre_movible{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin contenedor_flex_padre_desktop {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}

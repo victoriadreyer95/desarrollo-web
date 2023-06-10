@@ -1,0 +1,58 @@
+.contenedor_destaca {
+    @include contenedor_flex_card_movible
+}
+
+.contenedor_destaca img {
+    width: 70%;
+    height: 90%;
+}
+
+.contenedor_destaca h2 {
+    text-align: center;
+    color: map-get($paleta_de_colores , color-subtitulo );
+}
+
+.contenedor_destaca p {
+    text-align: center;
+    color: map-get($paleta_de_colores, color-parrafo );
+}
+
+/*distribucion de la pag dentro de seccion--movible--*/
+
+.lo_que_nos_destaca {
+    @include contenedor_flex_padre_movible
+}
+
+/*medida queries-lo que nos destaca--desktop-- */
+
+@media screen and (min-width: 1200px) {
+
+    .lo_que_nos_destaca {
+        @include contenedor_flex_padre_desktop
+    }
+
+    .contenedor_destaca {
+        height: 60rem;
+        width: 28%;
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+    }
+
+    .contenedor_destaca h2 {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    .contenedor_destaca p {
+        font-size: 30px;
+        padding: 10px;
+        height: 60vh;
+
+    }
+
+    .contenedor_destaca img {
+        width: 70%;
+        height: 80%;
+    }
+}

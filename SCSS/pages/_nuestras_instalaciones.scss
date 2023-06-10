@@ -1,0 +1,39 @@
+/*NUESTRAS INSTALACIONES*/
+
+.container__cards {
+    @include contenedor_flex_padre_movible;
+    justify-content: space-around;
+}
+
+
+.subtitulo_instalaciones {
+    text-align: center;
+    font-size: 2rem;
+    padding: 7px;
+    color: map-get($paleta_de_colores, color-subtitulo );
+    width: 80%;
+}
+
+.texto__instalaciones {
+    text-align: center;
+    padding: 1rem;
+    color: map-get($paleta_de_colores , color-parrafo )
+}
+
+/* medida querie nuestras instalaciones--desktop--*/
+
+@media screen and (min-width: 1200px) {
+    .container__cards {
+        @include contenedor_flex_padre_desktop
+    }
+
+    .element.style {
+        width: 18rem;
+        height: 40rem;
+    }
+
+    .texto__instalaciones {
+        font-size: 22px;
+        
+    }
+}

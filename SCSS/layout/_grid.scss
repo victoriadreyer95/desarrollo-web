@@ -1,0 +1,22 @@
+.body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1 fr;
+    grid-template-areas: "encabezado"
+        "principal"
+        "pie_de_pagina";
+}
+
+.header {
+    grid-area: encabezado;
+}
+
+.main {
+    grid-area: principal;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer {
+    grid-area: pie_de_pagina;
+}

@@ -1,0 +1,13 @@
+footer {
+            text-align: center;
+            color: map-get($paleta_de_colores , color-subtitulo);
+            padding: 1rem;
+        }
+
+        /*medida querie footer*/
+
+        @media screen and (min-width: 1200px) {
+            footer {
+                font-size: 25px;
+            }
+        }

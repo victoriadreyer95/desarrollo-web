@@ -1,0 +1,241 @@
+        /*RESET CSS*/
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Jost', sans-serif;
+            
+        }
+
+        /*FUENTES*/
+
+        body {
+            background-color: rgb(212, 214, 216);
+        }
+
+        header {
+            background-color: rgb(213, 222, 232);
+        }
+
+        /*TITULOS*/
+
+        h1 {
+            color: rgb(47, 47, 99);
+            font-weight: bolder;
+            font-size: 200%;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /*medida queries titulos*/
+
+        @media screen and (min-width: 1200px) {
+
+            h1 {
+                font-size: 3rem;
+                padding: 1rem;
+            }
+
+        }
+
+        /*BARRA DE NAVEGACION*/
+
+        .img_logo {
+            width: 10rem;
+            height: 10rem;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /*acomadar en espacio barra*/
+
+
+        .contenedor_logo {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .barra_de_navegacion {
+            list-style-type: none;
+            height: 50vh;
+            display: flex;
+
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+
+        ul.barra_de_navegacion li a {
+            text-decoration: none;
+            padding: 1rem;
+            margin: 1 rem;
+            
+            background-color: rgb(87, 87, 150);
+            border-radius: 50%;
+            color: aliceblue;
+        }
+        
+
+        /*medida queries barra de navegacion--desktop-- */
+
+        @media screen and (min-width: 1200px) {
+
+            header {
+                flex-direction: row;
+            }
+
+            .contenedor_logo {
+                width: 20%;
+                justify-content: center;
+            }
+
+            nav {
+                width: 80%;
+                justify-content: flex-end;
+            }
+
+            .barra_de_navegacion {
+                flex-direction: row;
+                justify-content: space-evenly;
+                height: 100%;
+                align-items: spa;
+
+
+            }
+
+            
+
+        }
+
+
+        /*FOOTER*/
+
+        footer {
+            text-align: center;
+            background-color: aliceblue;
+        }
+
+        /*medida querie footer*/
+
+        @media screen and (min-width: 1200px) {
+            footer {
+                font-size: 25px;
+            }
+        }
+
+        /*ERUCTURA GENERAL DE LA PAGINA*/
+
+        .body {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 3fr 1 fr;
+            grid-template-areas: "encabezado"
+                "principal"
+                "pie_de_pagina";
+        }
+
+        .header {
+            grid-area: encabezado;
+        }
+
+        .main {
+            grid-area: principal;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .footer {
+            grid-area: pie_de_pagina;
+        }
+
+
+
+
+        /*INDEX*/
+        .img_index {
+            width: 100%;
+            height: 100%;
+
+        }
+
+
+        /*LO QUE NOS DESTACA*/
+
+        /*formato dentro del div*/
+        .contenedor_destaca {
+            width: 90 vh;
+            height: auto;
+            margin: 7px;
+            border-radius: 10%;
+            background-color: rgb(175 181 199);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+
+        }
+
+        .contenedor_destaca img {
+            width: 70%;
+            height: 90%;
+        }
+
+        .contenedor_destaca h2 {
+            text-align: center;
+            color: #454b6b;
+        }
+
+        .contenedor_destaca p {
+            text-align: center;
+            color: rgb(68 68 87);
+        }
+
+        /*distribucion de la pag dentro de seccion*/
+
+        .lo_que_nos_destaca {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 5px;
+        }
+
+        /*medida queries-lo que nos destaca- */
+
+        @media screen and (min-width: 1200px) {
+
+            .lo_que_nos_destaca {
+                flex-flow: row nowrap;
+                justify-content: space-between;
+            }
+
+            .contenedor_destaca {
+                height: 60rem;
+                width: 28%;
+                display: flex;
+                flex-direction: column;
+                justify-content: baseline;
+            }
+
+            .contenedor_destaca h2 {
+                font-size: 2rem;
+                padding: 10px;
+            }
+
+            .contenedor_destaca p {
+                font-size: 30px;
+                padding: 10px;
+                height: 60vh;
+
+
+            }
+
+            .contenedor_destaca img {
+                width: 70%;
+                height: 80%;
+            }
+        }

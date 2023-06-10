@@ -1,0 +1,43 @@
+.contenedor_especialidades {
+    @include contenedor_flex_card_movible
+}
+
+.contenedor_especialidades img {
+    width: 70%;
+    height: 90%;
+}
+
+.contenedor_especialidades p {
+    text-align: center;
+    color: map-get($paleta_de_colores, color-parrafo );
+    font-size: 1rem;
+}
+
+/*distribucuion dentro del padre--movible--*/
+
+.nuestras_especialidades {
+    @include contenedor_flex_padre_movible
+}
+
+/*medida querie nuestras especialidaes--desktop--*/
+
+@media screen and (min-width: 1200px) {
+
+    .nuestras_especialidades {
+        @include contenedor_flex_padre_desktop
+    }
+
+    .contenedor_especialidades {
+        height: 60rem;
+        width: 27%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start
+    }
+
+    .contenedor_especialidades p {
+        font-size: 25px;
+        padding: 10px;
+    }
+
+}
