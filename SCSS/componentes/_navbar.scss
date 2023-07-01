@@ -36,6 +36,10 @@ header {
     }
 }
 
+.barra_de_navegacion a:hover{
+    background-color: rgb(50, 50, 86)
+}
+
 /*medida queries barra de navegacion--desktop-- */
 
 @media screen and (min-width: 1200px) {

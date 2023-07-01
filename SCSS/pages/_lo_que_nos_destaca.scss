@@ -1,11 +1,18 @@
 .contenedor_destaca {
-    @include contenedor_flex_card_movible
+    @include contenedor_flex_card_movible;
+    
 }
 
 .contenedor_destaca img {
     width: 70%;
     height: 90%;
+    transition: height width 2s;
 }
+.contenedor_destaca img:hover{
+    height:100%;
+    width: 100%;
+}
+
 
 .contenedor_destaca h2 {
     text-align: center;

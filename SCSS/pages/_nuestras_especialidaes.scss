@@ -11,6 +11,11 @@
     text-align: center;
     color: map-get($paleta_de_colores, color-parrafo );
     font-size: 1rem;
+    transition: font-size 2s;
+}
+
+.contenedor_especialidades p:hover {
+    font-size: 2rem;
 }
 
 /*distribucuion dentro del padre--movible--*/
@@ -24,15 +29,16 @@
 @media screen and (min-width: 1200px) {
 
     .nuestras_especialidades {
-        @include contenedor_flex_padre_desktop
+        @include contenedor_flex_padre_desktop;
+        align-items: stretch;
     }
 
     .contenedor_especialidades {
-        height: 60rem;
+        height: auto;
         width: 27%;
         display: flex;
         flex-direction: column;
-        justify-content: start
+        justify-content: start;
     }
 
     .contenedor_especialidades p {

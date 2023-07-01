@@ -10,14 +10,14 @@
     text-align: center;
     font-size: 2rem;
     padding: 7px;
-    color: map-get($paleta_de_colores, color-subtitulo );
+    color: map-get($paleta_de_colores, color-subtitulo);
     width: 80%;
 }
 
 .texto__instalaciones {
     text-align: center;
     padding: 1rem;
-    color: map-get($paleta_de_colores , color-parrafo )
+    color: map-get($paleta_de_colores , color-parrafo)
 }
 
 /* medida querie nuestras instalaciones--desktop--*/
@@ -34,6 +34,6 @@
 
     .texto__instalaciones {
         font-size: 22px;
-        
+
     }
 }
