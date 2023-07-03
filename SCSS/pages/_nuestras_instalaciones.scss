@@ -22,7 +22,7 @@
 
 /* medida querie nuestras instalaciones--desktop--*/
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
     .container__cards {
         @include contenedor_flex_padre_desktop
     }
